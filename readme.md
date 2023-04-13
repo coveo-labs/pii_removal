@@ -6,6 +6,22 @@ Using a bunch of regex clean the metadata + file contents from PII data.
 
 PII data is replaced with for example `[EMAIL]`.
 
+# Setup
+
+Add Pipeline Extension script and put the source into it.
+
+Add a new field called `log_pii` as String.
+
+## Assign the script to your source
+
+Source > More > Manage Extensions
+
+Add your Extension to your sources.
+
+Enable: `Original File` if you need also the body of the document to be cleaned.
+
+Enable it as `Pre-Conversion` script.
+
 ## Inputs/configuration
 
 | name                    | description                                                                   | example                                 |
